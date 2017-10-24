@@ -1,0 +1,6 @@
+.DS_Store
+# vim turd
+*.swp
+~*
+*.log
+*.out
