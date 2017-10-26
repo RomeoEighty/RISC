@@ -177,10 +177,10 @@ module computer(
     wire [4:0] wra;
     wire [3:0] wren;
 
-    fetch fetch_body(pc[7:0], ins);
-    execute execute_body(clk, ins, pc, reg1, reg2, wra, result, nextpc);
-    writeback writeback_body(clk, rstd, nextpc, pc);
-    reg_file rf_body(clk, rstd, result, ins[25;21], ins[20:16], wra, (~|wra), reg1, reg2);
+    fetch fetch_body(.pc(pc[7:0]), .ins(ins));
+    execute execute_body(.clk(clk), .ins(ins), .pc(pc), .reg1(reg1), .reg2(reg2), .wra(wra), .result(result), .nextpc(nextpc));
+    writeback writeback_body(.clk(clk), .rstd(rstd), .nextpc(nextpc), .pc(pc));
+    reg_file rf_body(.clk(clk), .rstd(rstd), .wr(result), .ra1(ins[25:21]), .ra2(ins[20:16]), .wa(wra), .wren((~|wra)), .rr1(reg1), .rr2(reg2));
 
     initial $monitor($time, "rstd = %d, clk = %d, pc = %h, ins = %h, wra = %h, reg1 = %h, reg2 = %h", rstd, clk, pc, ins, wra, reg1, reg2);
 
