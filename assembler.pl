@@ -5,6 +5,9 @@ while ($line = <FH>) {
     $line =~ s/\t/ /g;
     $line =~ s/\:/ : /g;
     $line =~ s/^ +//g;
+    if ($line =~ /^#/) {
+        next;
+    }
     chomp($line);
     @instruction = split(/ +/, $line);
     if ($instruction[1] eq ":") {
@@ -21,6 +24,9 @@ while ($line = <FH>) {
     $line =~ s/\t+/ /g;
     $line =~ s/\:/ : /g;
     $line =~ s/^ +//g;
+    if ($line =~ /^#/) {
+        next;
+    }
     chomp($line);
     @instruction = split(/ +/, $line);
     if ($instruction[1] eq ":") {
