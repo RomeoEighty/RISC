@@ -1,3 +1,18 @@
+// rs: the first source resistor
+// rt: the second source resistor ('cause 't' is the next letter after 's')
+// imm: immidiate value
+// 
+// computer ──┬── fetch
+//            ├── data_mem
+//            ├── execute ──┬── opr_gen
+//            │             ├── alu
+//            │             ├── wrengen
+//            │             ├── wreg
+//            │             ├── clac
+//            │             └── npc
+//            ├── writeback
+//            └── regr_file
+
 module fetch(
     input [7:0] pc,
     output [31:0] ins
