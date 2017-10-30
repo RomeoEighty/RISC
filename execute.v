@@ -44,7 +44,7 @@ module execute(
 
     function [31:0] calc;
         input [5:0] op;
-        input [31:0] alu_res, lt, dpl_imm, dm_r_data, pc;
+        input [31:0] alu_res, dpl_imm, dm_r_data, pc;
 
         case(op)
             6'd0, 6'd1, 6'd4, 6'd5, 6'd6: calc = alu_result;
@@ -95,7 +95,12 @@ module execute(
         endcase
     endfunction
 
-    assign op         = ins [31:26];
+    // operation field
+    //
+    // R type: |op(6)       |rs(5)     |rt(5)     |rd(5)     |aux(11)               |
+    // I type: |op(6)       |rs(5)     |rt(5)     |imm/dpl(16)                      |
+    // A type: |op(6)       |addr(26)                                               |
+    assign op         = ins [31:26]; // op(6)
     assign shift      = ins [10:6];
     assign operation  = ins [4:0];
     assign operand2   = (op == 6'd0) ? reg2 : dpl_imm;
@@ -108,8 +113,11 @@ module execute(
     data_mem data_meme_body2(.address(mem_address[7:0]), .clk(clk), .write_data(reg2[23:16]), .wren(wren[2]), .read_data(dm_r_data[23:16]));
     data_mem data_meme_body3(.address(mem_address[7:0]), .clk(clk), .write_data(reg2[31:24]), .wren(wren[3]), .read_data(dm_r_data[31:24]));
 
-    assign wra = ins [25:0];
+    assign wra       = ins [25:0];
+    assign reslut    = calc(op, alu_result, dpl_imm, dm_r_data, pc);
+
+    assign addr      = ins[25:0];
     assign nonbranch = pc + 32'd1;
-    assign branch = nonbranch + dpl_imm;
-    assign nextpc = npc(op, reg1, reg2, branch, nonbranch, addr);
+    assign branch    = nonbranch + dpl_imm;
+    assign nextpc    = npc(op, reg1, reg2, branch, nonbranch, addr);
 endmodule
