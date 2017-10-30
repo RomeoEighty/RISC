@@ -12,21 +12,10 @@
 //            │             └── npc
 //            ├── writeback
 //            └── regr_file
+
 `include "execute.v"
 `include "reg_file.v"
-
-module fetch(
-    input [7:0] pc,
-    output [31:0] ins
-);
-    reg [31:0] ins_mem [0:255];
-
-    initial begin
-        $readmemb("sample2.bnr", ins_mem); // for porgram load
-    end
-
-    assign ins = ins_mem[pc];
-endmodule
+`include "fetch.v"
 
 module writeback(
     input clk, rstd,
@@ -46,8 +35,8 @@ module computer(
     input clk, rstd
 );
     wire [31:0] pc, ins, reg1, reg2, result, nextpc;
-    wire [4:0] wra;
-    wire [3:0] wren;
+    wire [4:0]  wra;
+    wire [3:0]  wren;
 
     fetch fetch_body(.pc(pc[7:0]), .ins(ins));
     execute execute_body(.clk(clk), .ins(ins), .pc(pc), .reg1(reg1), .reg2(reg2), .wra(wra), .result(result), .nextpc(nextpc));
