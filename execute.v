@@ -1,3 +1,18 @@
+module data_mem(
+    input [7:0] address,
+    input clk,
+    input [7:0] write_data,
+    input wren, // wren: write enable
+    output [7:0] read_data
+);
+    reg [7:0] d_mem [0:255];
+
+    always @(posedge clk)
+        if (wren == 0) d_mem [address] <= write_data;
+
+    assign read_data = d_mem [address];
+endmodule
+
 module execute(
     input clk,
     input [31:0] ins, pc, reg1, reg2, // pc: program couter
@@ -109,12 +124,12 @@ module execute(
     assign mem_address = (reg1 + dpl_imm) >>> 2;
     assign wren = wrengen(op);
     data_mem data_meme_body0(.address(mem_address[7:0]), .clk(clk), .write_data(reg2[7:0])  , .wren(wren[0]), .read_data(dm_r_data[7:0]));
-    data_mem data_meme_body1(.address(mem_address[7:0]), .clk(clk), .write_data(reg2[15:8]) , .wren(wren[1]), .read_data(dm_r_data[15:8]));
-    data_mem data_meme_body2(.address(mem_address[7:0]), .clk(clk), .write_data(reg2[23:16]), .wren(wren[2]), .read_data(dm_r_data[23:16]));
-    data_mem data_meme_body3(.address(mem_address[7:0]), .clk(clk), .write_data(reg2[31:24]), .wren(wren[3]), .read_data(dm_r_data[31:24]));
+    data_mem data_meme_body1(.address(mem_address[15:8]), .clk(clk), .write_data(reg2[15:8]) , .wren(wren[1]), .read_data(dm_r_data[15:8]));
+    data_mem data_meme_body2(.address(mem_address[23:16]), .clk(clk), .write_data(reg2[23:16]), .wren(wren[2]), .read_data(dm_r_data[23:16]));
+    data_mem data_meme_body3(.address(mem_address[31:24]), .clk(clk), .write_data(reg2[31:24]), .wren(wren[3]), .read_data(dm_r_data[31:24]));
 
-    assign wra       = ins [25:0];
-    assign reslut    = calc(op, alu_result, dpl_imm, dm_r_data, pc);
+    assign wra       = wreg(op, ins[20:16], ins[15:11]);
+    assign result    = calc(op, alu_result, dpl_imm, dm_r_data, pc);
 
     assign addr      = ins[25:0];
     assign nonbranch = pc + 32'd1;
