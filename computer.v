@@ -28,21 +28,6 @@ module fetch(
     assign ins = ins_mem[pc];
 endmodule
 
-module data_mem(
-    input [7:0] address,
-    input clk,
-    input [7:0] write_data,
-    input wren, // wren: write enable
-    output [7:0] read_data
-);
-    reg [7:0] d_mem [0:255];
-
-    always @(posedge clk)
-        if (wren == 0) d_mem [address] <= write_data;
-
-    assign read_data = d_mem [address];
-endmodule
-
 module writeback(
     input clk, rstd,
     input [31:0] nextpc,
