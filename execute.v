@@ -59,7 +59,7 @@ module execute(
 
     function [31:0] calc;
         input [5:0] op;
-        input [31:0] alu_res, dpl_imm, dm_r_data, pc;
+        input [31:0] alu_result, dpl_imm, dm_r_data, pc;
 
         case(op)
             6'd0, 6'd1, 6'd4, 6'd5, 6'd6: calc = alu_result;
@@ -118,7 +118,8 @@ module execute(
     assign op         = ins [31:26]; // op(6)
     assign shift      = ins [10:6];
     assign operation  = ins [4:0];
-    assign operand2   = (op == 6'd0) ? reg2 : dpl_imm;
+    assign dpl_imm    = {{16{ins[15]}}, ins[15:0]};
+    assign operand2   = (op == 6'd0) ? reg2 : dpl_imm; // op 0:R, ~0:I
     assign alu_result = alu(opr_gen(op, operation), shift, reg1, operand2);
 
     assign mem_address = (reg1 + dpl_imm) >>> 2;
