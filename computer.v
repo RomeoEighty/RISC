@@ -17,20 +17,6 @@
 `include "reg_file.v"
 `include "fetch.v"
 
-module writeback(
-    input clk, rstd,
-    input [31:0] nextpc,
-    output [31:0] pc
-);
-    reg [31:0] pc;
-
-    always @(negedge rstd or posedge clk)
-        begin
-            if(rstd == 0) pc <= 32'h00000000;
-            else if (clk == 1) pc <= nextpc;
-        end
-endmodule
-
 module computer(
     input clk, rstd
 );
