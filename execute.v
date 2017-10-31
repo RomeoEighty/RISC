@@ -2,7 +2,7 @@ module data_mem(
     input [7:0] address,
     input clk,
     input [7:0] write_data,
-    input wren, // wren: write enable
+    input wren, // wren 0: write enable, 1: write disable
     output [7:0] read_data
 );
     reg [7:0] d_mem [0:255];
@@ -123,6 +123,8 @@ module execute(
 
     assign mem_address = (reg1 + dpl_imm) >>> 2;
     assign wren = wrengen(op);
+
+    // 8bit, 4 thread memory
     data_mem data_meme_body0(.address(mem_address[7:0]), .clk(clk), .write_data(reg2[7:0])  , .wren(wren[0]), .read_data(dm_r_data[7:0]));
     data_mem data_meme_body1(.address(mem_address[15:8]), .clk(clk), .write_data(reg2[15:8]) , .wren(wren[1]), .read_data(dm_r_data[15:8]));
     data_mem data_meme_body2(.address(mem_address[23:16]), .clk(clk), .write_data(reg2[23:16]), .wren(wren[2]), .read_data(dm_r_data[23:16]));
