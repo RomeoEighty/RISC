@@ -10,8 +10,8 @@ module adderForPc(
 endmodule
 
 module instructionMemory(
-    input  programCounter,
-    output instruction
+    input  [7:0]  programCounter,
+    output [31:0] instruction
 );
     reg [31:0] instructionMemory [0:255];
 
