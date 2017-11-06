@@ -9,8 +9,9 @@ module adderForPc(
     assign nextPc = pc + 1;
 endmodule
 
+// contains 256 insturctions whose wide of bit is 32.
 module instructionMemory(
-    input  [7:0]  programCounter,
+    input  [7:0]  programCounter, // 2 ** 8 = 256
     output [31:0] instruction
 );
     reg [31:0] instructionMemory [0:255];
