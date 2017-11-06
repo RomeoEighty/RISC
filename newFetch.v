@@ -3,10 +3,10 @@
 
 // if there was no branch instruction, this adder would work.
 module adderForPc(
-    input pc,
-    output nextPc
+    input  [7:0] pc,
+    output [7:0] nextPc
 );
-    assign nextPc = pc + 1;
+    assign nextPc = pc + 8'b1;
 endmodule
 
 // contains 256 insturctions whose wide of bit is 32.
