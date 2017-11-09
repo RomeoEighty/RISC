@@ -1,8 +1,9 @@
+`include "computer.v"
 module test;
     reg clk, rstd;
     initial begin
         $dumpfile("dumpfile.vcd");
-        $dumpvars(0);
+        $dumpvars(0, comp);
         clk <= 0;
         rstd <= 0;
         #100

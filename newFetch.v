@@ -12,15 +12,15 @@ module adderForPc(
 endmodule
 
 // contains 256 insturctions whose wide of bit is 32.
-module instructionMemory(
-    input  [`BITWIDTHOFPROGRAMCOUNTER - 1:0]  programCounter, // 2 ** 8 = 256
-    output [31:0] instruction
+module insMemory(
+    input  [`BITWIDTHOFPROGRAMCOUNTER - 1:0]  pc, // 2 ** 8 = 256
+    output [31:0] ins
 );
-    reg [31:0] instructionMemory [0:2 ** `BITWIDTHOFPROGRAMCOUNTER];
+    reg [31:0] insMemory [0:2 ** `BITWIDTHOFPROGRAMCOUNTER];
 
     initial begin
-        $readmemb("sample.bnr", instructionMemory); // load binary file to instructionMemory
+        $readmemb("sample1.bin", insMemory); // load binary file to insMemory
     end
 
-    assign instruction = instructionMemory[programCounter];
+    assign ins = insMemory[pc];
 endmodule
