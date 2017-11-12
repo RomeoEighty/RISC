@@ -7,7 +7,7 @@ module dataMemory(
     input  writeEnable,         // assert(1): write enable, assert(0): write disable
     output [7:0] readData
 );
-    reg [7:0] data [0:255];
+    reg [7:0] data [0:2**10*128 - 1];
 
     always @(posedge clk) begin
         if (writeEnable == 1) begin
