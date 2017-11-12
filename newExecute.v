@@ -56,10 +56,10 @@ module decode(
         input [5:0] op;
 
         case(op)
-            6'd24:   wrengen = 4'b0000;
-            6'd26:   wrengen = 4'b1100;
-            6'd28:   wrengen = 4'b1110;
-            default: wrengen = 4'b1111;
+            6'd24:   wrengen = 4'b1111;
+            6'd26:   wrengen = 4'b0011;
+            6'd28:   wrengen = 4'b0001;
+            default: wrengen = 4'b0000;
         endcase
     endfunction // }}}
 
@@ -69,9 +69,9 @@ endmodule
 module execute(
     input  clk,
     input  [31:0] ins,
-    input  [31:0] pc, // pc: program couter
-    input  [31:0] reg1,
-    input  [31:0] reg2,
+    input  [31:0] pc,   // pc: program couter
+    input  [31:0] reg1, // register[rs]
+    input  [31:0] reg2, // register[rt]
 
     input  [5:0]  op,
     input  [4:0]  rs,
@@ -122,14 +122,14 @@ module execute(
     // 8bit, 4 thread memory
     dataMemory datamemory0(
         .address(mem_address[7:0]), // input [7:0]
-        .clock(clk),                // input
+        .clk(clk),                  // input
         .writeData(reg2[7:0]),      // input [7:0]
         .writeEnable(wren[0]),      // input
         .readData(dm_r_data[7:0])   // output [7:0]
     );
-    dataMemory datamemory1(.address(mem_address[15:8]),  .clock(clk), .writeData(reg2[15:8]) , .writeEnable(wren[1]), .readData(dm_r_data[15:8]));
-    dataMemory datamemory2(.address(mem_address[23:16]), .clock(clk), .writeData(reg2[23:16]), .writeEnable(wren[2]), .readData(dm_r_data[23:16]));
-    dataMemory datamemory3(.address(mem_address[31:24]), .clock(clk), .writeData(reg2[31:24]), .writeEnable(wren[3]), .readData(dm_r_data[31:24]));
+    dataMemory datamemory1(.address(mem_address[15:8]),  .clk(clk), .writeData(reg2[15:8]) , .writeEnable(wren[1]), .readData(dm_r_data[15:8]));
+    dataMemory datamemory2(.address(mem_address[23:16]), .clk(clk), .writeData(reg2[23:16]), .writeEnable(wren[2]), .readData(dm_r_data[23:16]));
+    dataMemory datamemory3(.address(mem_address[31:24]), .clk(clk), .writeData(reg2[31:24]), .writeEnable(wren[3]), .readData(dm_r_data[31:24]));
 
     assign wra       = wreg(op, rt, rd);
 
