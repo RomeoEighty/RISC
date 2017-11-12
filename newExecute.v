@@ -121,15 +121,15 @@ module execute(
 
     // 8bit, 4 thread memory
     dataMemory datamemory0(
-        .address(mem_address[7:0]), // input [7:0]
+        .wordaddr(mem_address),     // input [31:0]
         .clk(clk),                  // input
         .writeData(reg2[7:0]),      // input [7:0]
         .writeEnable(wren[0]),      // input
         .readData(dm_r_data[7:0])   // output [7:0]
     );
-    dataMemory datamemory1(.address(mem_address[15:8]),  .clk(clk), .writeData(reg2[15:8]) , .writeEnable(wren[1]), .readData(dm_r_data[15:8]));
-    dataMemory datamemory2(.address(mem_address[23:16]), .clk(clk), .writeData(reg2[23:16]), .writeEnable(wren[2]), .readData(dm_r_data[23:16]));
-    dataMemory datamemory3(.address(mem_address[31:24]), .clk(clk), .writeData(reg2[31:24]), .writeEnable(wren[3]), .readData(dm_r_data[31:24]));
+    dataMemory datamemory1(.wordaddr(mem_address), .clk(clk), .writeData(reg2[15:8]) , .writeEnable(wren[1]), .readData(dm_r_data[15:8]));
+    dataMemory datamemory2(.wordaddr(mem_address), .clk(clk), .writeData(reg2[23:16]), .writeEnable(wren[2]), .readData(dm_r_data[23:16]));
+    dataMemory datamemory3(.wordaddr(mem_address), .clk(clk), .writeData(reg2[31:24]), .writeEnable(wren[3]), .readData(dm_r_data[31:24]));
 
     assign wra       = wreg(op, rt, rd);
 
@@ -180,6 +180,7 @@ module execute(
             6'd35:        npc = (reg1 <= reg2) ? pc + 32'd1 + dpl_imm : pc + 32'd1; // ble
             6'd40, 6'd41: npc = {6'b0, addr};                                       // j, jal
             6'd42:        npc = reg1;                                               // jr
+            6'd63:        $finish;                                       // halt
             default:      npc = pc + 32'd1;
         endcase
     endfunction // }}}
