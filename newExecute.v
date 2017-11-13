@@ -29,8 +29,18 @@ module decode(
     assign aux      = ins[10:0];
     assign shift    = aux[10:6];
     assign addr     = ins[25:0]; // A type: |op(6)       |addr(26)                                               |
-    assign dpl_imm  = {{16{ins[15]}}, ins[15:0]};
+    assign dpl_imm  = extension(ins, op);
     assign operand2 = (op == 6'd0) ? reg2 : dpl_imm; // op 0:R, ~0:I
+
+
+    function [31:0] extension;
+        input [15:0] halfword;
+        input [5:0]  op;
+        case (op)
+            6'd4, 6'd5, 6'd6: extension = {{16{1'b0}}, ins[15:0]};
+            default:          extension = {{ins[15]}, ins[15:0]};
+        endcase
+    endfunction
 
 
     assign shortop  = opr_gen(op, ins[4:0]);
@@ -106,7 +116,7 @@ module execute(
 
         case(opr)
             5'd0:    alu = operand1 + operand2;    // addi (opr_gen)
-            5'd1:    alu = operand1 - operand2;
+            5'd2:    alu = operand1 + ((~operand2) + 1);
             5'd8:    alu = operand1 & operand2;    // andi (opr_gen)
             5'd9:    alu = operand1 | operand2;    // ori  (opr_gen)
             5'd10:   alu = operand1 ^ operand2;    // xori (opr_gen)
