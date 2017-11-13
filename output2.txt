@@ -1,0 +1,990 @@
+WARNING: ./newFetch.v:22: $readmemb(sample2.bin): Not enough words in the file for the requested range [0:256].
+VCD info: dumpfile newDump.vcd opened for output.
+
+@test.cmp.rf         0
+[00]xxxxxxxx [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]xxxxxxxx [09]xxxxxxxx [10]xxxxxxxx [11]xxxxxxxx
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+
+@test.cmp.rf        40
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]xxxxxxxx [09]xxxxxxxx [10]xxxxxxxx [11]xxxxxxxx
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3        40[0x00000002]->0xxx
+@test.cmp.exec.datamemory2        40[0x00000002]->0xxx
+@test.cmp.exec.datamemory1        40[0x00000002]->0xxx
+@test.cmp.exec.datamemory0        40[0x00000002]->0xxx
+
+@test.cmp.rf       120
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]xxxxxxxx [09]xxxxxxxx [10]xxxxxxxx [11]xxxxxxxx
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0       120[0x00000002]->0xxx
+@test.cmp.exec.datamemory1       120[0x00000002]->0xxx
+@test.cmp.exec.datamemory2       120[0x00000002]->0xxx
+@test.cmp.exec.datamemory3       120[0x00000002]->0xxx
+
+@test.cmp.rf       200
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]xxxxxxxx [09]xxxxxxxx [10]xxxxxxxx [11]xxxxxxxx
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3       200[0x00000080]->0xxx
+@test.cmp.exec.datamemory2       200[0x00000080]->0xxx
+@test.cmp.exec.datamemory1       200[0x00000080]->0xxx
+@test.cmp.exec.datamemory0       200[0x00000080]->0xxx
+
+@test.cmp.rf       280
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]xxxxxxxx [09]xxxxxxxx [10]xxxxxxxx [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0       280[0x00000000]->0xxx
+@test.cmp.exec.datamemory1       280[0x00000000]->0xxx
+@test.cmp.exec.datamemory2       280[0x00000000]->0xxx
+@test.cmp.exec.datamemory3       280[0x00000000]->0xxx
+
+@test.cmp.rf       360
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000000 [09]xxxxxxxx [10]xxxxxxxx [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3       360[0x00000080]<-0x00
+@test.cmp.exec.datamemory3       360[0x00000080]->0xxx
+@test.cmp.exec.datamemory2       360[0x00000080]<-0x00
+@test.cmp.exec.datamemory2       360[0x00000080]->0xxx
+@test.cmp.exec.datamemory1       360[0x00000080]<-0x00
+@test.cmp.exec.datamemory1       360[0x00000080]->0xxx
+@test.cmp.exec.datamemory0       360[0x00000080]<-0x00
+@test.cmp.exec.datamemory0       360[0x00000080]->0xxx
+
+@test.cmp.rf       440
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000000 [09]xxxxxxxx [10]xxxxxxxx [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0       440[0x00000000]->0xxx
+@test.cmp.exec.datamemory1       440[0x00000000]->0xxx
+@test.cmp.exec.datamemory2       440[0x00000000]->0xxx
+@test.cmp.exec.datamemory3       440[0x00000000]->0xxx
+
+@test.cmp.rf       520
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000000 [09]00000001 [10]xxxxxxxx [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3       520[0x00000081]<-0x00
+@test.cmp.exec.datamemory3       520[0x00000081]->0xxx
+@test.cmp.exec.datamemory2       520[0x00000081]<-0x00
+@test.cmp.exec.datamemory2       520[0x00000081]->0xxx
+@test.cmp.exec.datamemory1       520[0x00000081]<-0x00
+@test.cmp.exec.datamemory1       520[0x00000081]->0xxx
+@test.cmp.exec.datamemory0       520[0x00000081]<-0x01
+@test.cmp.exec.datamemory0       520[0x00000081]->0xxx
+
+@test.cmp.rf       600
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000000 [09]00000001 [10]xxxxxxxx [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0       600[0x00001400]->0xxx
+@test.cmp.exec.datamemory1       600[0x00001400]->0xxx
+@test.cmp.exec.datamemory2       600[0x00001400]->0xxx
+@test.cmp.exec.datamemory3       600[0x00001400]->0xxx
+
+@test.cmp.rf       680
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000000 [09]00000001 [10]00000001 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3       680[0x00000082]<-0x00
+@test.cmp.exec.datamemory3       680[0x00000082]->0xxx
+@test.cmp.exec.datamemory2       680[0x00000082]<-0x00
+@test.cmp.exec.datamemory2       680[0x00000082]->0xxx
+@test.cmp.exec.datamemory1       680[0x00000082]<-0x00
+@test.cmp.exec.datamemory1       680[0x00000082]->0xxx
+@test.cmp.exec.datamemory0       680[0x00000082]<-0x01
+@test.cmp.exec.datamemory0       680[0x00000082]->0xxx
+
+@test.cmp.rf       760
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000000 [09]00000001 [10]00000001 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0       760[0x00000081]->0x01
+@test.cmp.exec.datamemory1       760[0x00000081]->0x00
+@test.cmp.exec.datamemory2       760[0x00000081]->0x00
+@test.cmp.exec.datamemory3       760[0x00000081]->0x00
+
+@test.cmp.rf       840
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000001 [10]00000001 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3       840[0x00000082]->0x00
+@test.cmp.exec.datamemory2       840[0x00000082]->0x00
+@test.cmp.exec.datamemory1       840[0x00000082]->0x00
+@test.cmp.exec.datamemory0       840[0x00000082]->0x01
+
+@test.cmp.rf       920
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000001 [10]00000001 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0       920[0x00001400]->0xxx
+@test.cmp.exec.datamemory1       920[0x00001400]->0xxx
+@test.cmp.exec.datamemory2       920[0x00001400]->0xxx
+@test.cmp.exec.datamemory3       920[0x00001400]->0xxx
+
+@test.cmp.rf      1000
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000001 [10]00000002 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      1000[0x00000083]<-0x00
+@test.cmp.exec.datamemory3      1000[0x00000083]->0xxx
+@test.cmp.exec.datamemory2      1000[0x00000083]<-0x00
+@test.cmp.exec.datamemory2      1000[0x00000083]->0xxx
+@test.cmp.exec.datamemory1      1000[0x00000083]<-0x00
+@test.cmp.exec.datamemory1      1000[0x00000083]->0xxx
+@test.cmp.exec.datamemory0      1000[0x00000083]<-0x02
+@test.cmp.exec.datamemory0      1000[0x00000083]->0xxx
+
+@test.cmp.rf      1080
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000001 [10]00000002 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      1080[0x00000082]->0x01
+@test.cmp.exec.datamemory1      1080[0x00000082]->0x00
+@test.cmp.exec.datamemory2      1080[0x00000082]->0x00
+@test.cmp.exec.datamemory3      1080[0x00000082]->0x00
+
+@test.cmp.rf      1160
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000001 [10]00000002 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      1160[0x00000083]->0x00
+@test.cmp.exec.datamemory2      1160[0x00000083]->0x00
+@test.cmp.exec.datamemory1      1160[0x00000083]->0x00
+@test.cmp.exec.datamemory0      1160[0x00000083]->0x02
+
+@test.cmp.rf      1240
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000002 [10]00000002 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      1240[0x00001400]->0xxx
+@test.cmp.exec.datamemory1      1240[0x00001400]->0xxx
+@test.cmp.exec.datamemory2      1240[0x00001400]->0xxx
+@test.cmp.exec.datamemory3      1240[0x00001400]->0xxx
+
+@test.cmp.rf      1320
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000002 [10]00000003 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      1320[0x00000084]<-0x00
+@test.cmp.exec.datamemory3      1320[0x00000084]->0xxx
+@test.cmp.exec.datamemory2      1320[0x00000084]<-0x00
+@test.cmp.exec.datamemory2      1320[0x00000084]->0xxx
+@test.cmp.exec.datamemory1      1320[0x00000084]<-0x00
+@test.cmp.exec.datamemory1      1320[0x00000084]->0xxx
+@test.cmp.exec.datamemory0      1320[0x00000084]<-0x03
+@test.cmp.exec.datamemory0      1320[0x00000084]->0xxx
+
+@test.cmp.rf      1400
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000001 [09]00000002 [10]00000003 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      1400[0x00000083]->0x02
+@test.cmp.exec.datamemory1      1400[0x00000083]->0x00
+@test.cmp.exec.datamemory2      1400[0x00000083]->0x00
+@test.cmp.exec.datamemory3      1400[0x00000083]->0x00
+
+@test.cmp.rf      1480
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000002 [09]00000002 [10]00000003 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      1480[0x00000084]->0x00
+@test.cmp.exec.datamemory2      1480[0x00000084]->0x00
+@test.cmp.exec.datamemory1      1480[0x00000084]->0x00
+@test.cmp.exec.datamemory0      1480[0x00000084]->0x03
+
+@test.cmp.rf      1560
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000002 [09]00000003 [10]00000003 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      1560[0x00001400]->0xxx
+@test.cmp.exec.datamemory1      1560[0x00001400]->0xxx
+@test.cmp.exec.datamemory2      1560[0x00001400]->0xxx
+@test.cmp.exec.datamemory3      1560[0x00001400]->0xxx
+
+@test.cmp.rf      1640
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000002 [09]00000003 [10]00000005 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      1640[0x00000085]<-0x00
+@test.cmp.exec.datamemory3      1640[0x00000085]->0xxx
+@test.cmp.exec.datamemory2      1640[0x00000085]<-0x00
+@test.cmp.exec.datamemory2      1640[0x00000085]->0xxx
+@test.cmp.exec.datamemory1      1640[0x00000085]<-0x00
+@test.cmp.exec.datamemory1      1640[0x00000085]->0xxx
+@test.cmp.exec.datamemory0      1640[0x00000085]<-0x05
+@test.cmp.exec.datamemory0      1640[0x00000085]->0xxx
+
+@test.cmp.rf      1720
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000002 [09]00000003 [10]00000005 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      1720[0x00000084]->0x03
+@test.cmp.exec.datamemory1      1720[0x00000084]->0x00
+@test.cmp.exec.datamemory2      1720[0x00000084]->0x00
+@test.cmp.exec.datamemory3      1720[0x00000084]->0x00
+
+@test.cmp.rf      1800
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000003 [09]00000003 [10]00000005 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      1800[0x00000085]->0x00
+@test.cmp.exec.datamemory2      1800[0x00000085]->0x00
+@test.cmp.exec.datamemory1      1800[0x00000085]->0x00
+@test.cmp.exec.datamemory0      1800[0x00000085]->0x05
+
+@test.cmp.rf      1880
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000003 [09]00000005 [10]00000005 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      1880[0x00001400]->0xxx
+@test.cmp.exec.datamemory1      1880[0x00001400]->0xxx
+@test.cmp.exec.datamemory2      1880[0x00001400]->0xxx
+@test.cmp.exec.datamemory3      1880[0x00001400]->0xxx
+
+@test.cmp.rf      1960
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000003 [09]00000005 [10]00000008 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      1960[0x00000086]<-0x00
+@test.cmp.exec.datamemory3      1960[0x00000086]->0xxx
+@test.cmp.exec.datamemory2      1960[0x00000086]<-0x00
+@test.cmp.exec.datamemory2      1960[0x00000086]->0xxx
+@test.cmp.exec.datamemory1      1960[0x00000086]<-0x00
+@test.cmp.exec.datamemory1      1960[0x00000086]->0xxx
+@test.cmp.exec.datamemory0      1960[0x00000086]<-0x08
+@test.cmp.exec.datamemory0      1960[0x00000086]->0xxx
+
+@test.cmp.rf      2040
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000003 [09]00000005 [10]00000008 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      2040[0x00000085]->0x05
+@test.cmp.exec.datamemory1      2040[0x00000085]->0x00
+@test.cmp.exec.datamemory2      2040[0x00000085]->0x00
+@test.cmp.exec.datamemory3      2040[0x00000085]->0x00
+
+@test.cmp.rf      2120
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000005 [09]00000005 [10]00000008 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      2120[0x00000086]->0x00
+@test.cmp.exec.datamemory2      2120[0x00000086]->0x00
+@test.cmp.exec.datamemory1      2120[0x00000086]->0x00
+@test.cmp.exec.datamemory0      2120[0x00000086]->0x08
+
+@test.cmp.rf      2200
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000005 [09]00000008 [10]00000008 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      2200[0x00001401]->0xxx
+@test.cmp.exec.datamemory1      2200[0x00001401]->0xxx
+@test.cmp.exec.datamemory2      2200[0x00001401]->0xxx
+@test.cmp.exec.datamemory3      2200[0x00001401]->0xxx
+
+@test.cmp.rf      2280
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000005 [09]00000008 [10]0000000d [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      2280[0x00000087]<-0x00
+@test.cmp.exec.datamemory3      2280[0x00000087]->0xxx
+@test.cmp.exec.datamemory2      2280[0x00000087]<-0x00
+@test.cmp.exec.datamemory2      2280[0x00000087]->0xxx
+@test.cmp.exec.datamemory1      2280[0x00000087]<-0x00
+@test.cmp.exec.datamemory1      2280[0x00000087]->0xxx
+@test.cmp.exec.datamemory0      2280[0x00000087]<-0x0d
+@test.cmp.exec.datamemory0      2280[0x00000087]->0xxx
+
+@test.cmp.rf      2360
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000005 [09]00000008 [10]0000000d [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      2360[0x00000086]->0x08
+@test.cmp.exec.datamemory1      2360[0x00000086]->0x00
+@test.cmp.exec.datamemory2      2360[0x00000086]->0x00
+@test.cmp.exec.datamemory3      2360[0x00000086]->0x00
+
+@test.cmp.rf      2440
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000008 [09]00000008 [10]0000000d [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      2440[0x00000087]->0x00
+@test.cmp.exec.datamemory2      2440[0x00000087]->0x00
+@test.cmp.exec.datamemory1      2440[0x00000087]->0x00
+@test.cmp.exec.datamemory0      2440[0x00000087]->0x0d
+
+@test.cmp.rf      2520
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000008 [09]0000000d [10]0000000d [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      2520[0x00001402]->0xxx
+@test.cmp.exec.datamemory1      2520[0x00001402]->0xxx
+@test.cmp.exec.datamemory2      2520[0x00001402]->0xxx
+@test.cmp.exec.datamemory3      2520[0x00001402]->0xxx
+
+@test.cmp.rf      2600
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000008 [09]0000000d [10]00000015 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      2600[0x00000088]<-0x00
+@test.cmp.exec.datamemory3      2600[0x00000088]->0xxx
+@test.cmp.exec.datamemory2      2600[0x00000088]<-0x00
+@test.cmp.exec.datamemory2      2600[0x00000088]->0xxx
+@test.cmp.exec.datamemory1      2600[0x00000088]<-0x00
+@test.cmp.exec.datamemory1      2600[0x00000088]->0xxx
+@test.cmp.exec.datamemory0      2600[0x00000088]<-0x15
+@test.cmp.exec.datamemory0      2600[0x00000088]->0xxx
+
+@test.cmp.rf      2680
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000008 [09]0000000d [10]00000015 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      2680[0x00000087]->0x0d
+@test.cmp.exec.datamemory1      2680[0x00000087]->0x00
+@test.cmp.exec.datamemory2      2680[0x00000087]->0x00
+@test.cmp.exec.datamemory3      2680[0x00000087]->0x00
+
+@test.cmp.rf      2760
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]0000000d [09]0000000d [10]00000015 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      2760[0x00000088]->0x00
+@test.cmp.exec.datamemory2      2760[0x00000088]->0x00
+@test.cmp.exec.datamemory1      2760[0x00000088]->0x00
+@test.cmp.exec.datamemory0      2760[0x00000088]->0x15
+
+@test.cmp.rf      2840
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]0000000d [09]00000015 [10]00000015 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      2840[0x00001403]->0xxx
+@test.cmp.exec.datamemory1      2840[0x00001403]->0xxx
+@test.cmp.exec.datamemory2      2840[0x00001403]->0xxx
+@test.cmp.exec.datamemory3      2840[0x00001403]->0xxx
+
+@test.cmp.rf      2920
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]0000000d [09]00000015 [10]00000022 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      2920[0x00000089]<-0x00
+@test.cmp.exec.datamemory3      2920[0x00000089]->0xxx
+@test.cmp.exec.datamemory2      2920[0x00000089]<-0x00
+@test.cmp.exec.datamemory2      2920[0x00000089]->0xxx
+@test.cmp.exec.datamemory1      2920[0x00000089]<-0x00
+@test.cmp.exec.datamemory1      2920[0x00000089]->0xxx
+@test.cmp.exec.datamemory0      2920[0x00000089]<-0x22
+@test.cmp.exec.datamemory0      2920[0x00000089]->0xxx
+
+@test.cmp.rf      3000
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]0000000d [09]00000015 [10]00000022 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      3000[0x00000088]->0x15
+@test.cmp.exec.datamemory1      3000[0x00000088]->0x00
+@test.cmp.exec.datamemory2      3000[0x00000088]->0x00
+@test.cmp.exec.datamemory3      3000[0x00000088]->0x00
+
+@test.cmp.rf      3080
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000015 [09]00000015 [10]00000022 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      3080[0x00000089]->0x00
+@test.cmp.exec.datamemory2      3080[0x00000089]->0x00
+@test.cmp.exec.datamemory1      3080[0x00000089]->0x00
+@test.cmp.exec.datamemory0      3080[0x00000089]->0x22
+
+@test.cmp.rf      3160
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000015 [09]00000022 [10]00000022 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      3160[0x00001405]->0xxx
+@test.cmp.exec.datamemory1      3160[0x00001405]->0xxx
+@test.cmp.exec.datamemory2      3160[0x00001405]->0xxx
+@test.cmp.exec.datamemory3      3160[0x00001405]->0xxx
+
+@test.cmp.rf      3240
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000015 [09]00000022 [10]00000037 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      3240[0x0000008a]<-0x00
+@test.cmp.exec.datamemory3      3240[0x0000008a]->0xxx
+@test.cmp.exec.datamemory2      3240[0x0000008a]<-0x00
+@test.cmp.exec.datamemory2      3240[0x0000008a]->0xxx
+@test.cmp.exec.datamemory1      3240[0x0000008a]<-0x00
+@test.cmp.exec.datamemory1      3240[0x0000008a]->0xxx
+@test.cmp.exec.datamemory0      3240[0x0000008a]<-0x37
+@test.cmp.exec.datamemory0      3240[0x0000008a]->0xxx
+
+@test.cmp.rf      3320
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000015 [09]00000022 [10]00000037 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      3320[0x00000089]->0x22
+@test.cmp.exec.datamemory1      3320[0x00000089]->0x00
+@test.cmp.exec.datamemory2      3320[0x00000089]->0x00
+@test.cmp.exec.datamemory3      3320[0x00000089]->0x00
+
+@test.cmp.rf      3400
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000022 [09]00000022 [10]00000037 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      3400[0x0000008a]->0x00
+@test.cmp.exec.datamemory2      3400[0x0000008a]->0x00
+@test.cmp.exec.datamemory1      3400[0x0000008a]->0x00
+@test.cmp.exec.datamemory0      3400[0x0000008a]->0x37
+
+@test.cmp.rf      3480
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000022 [09]00000037 [10]00000037 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      3480[0x00001408]->0xxx
+@test.cmp.exec.datamemory1      3480[0x00001408]->0xxx
+@test.cmp.exec.datamemory2      3480[0x00001408]->0xxx
+@test.cmp.exec.datamemory3      3480[0x00001408]->0xxx
+
+@test.cmp.rf      3560
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000022 [09]00000037 [10]00000059 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      3560[0x0000008b]<-0x00
+@test.cmp.exec.datamemory3      3560[0x0000008b]->0xxx
+@test.cmp.exec.datamemory2      3560[0x0000008b]<-0x00
+@test.cmp.exec.datamemory2      3560[0x0000008b]->0xxx
+@test.cmp.exec.datamemory1      3560[0x0000008b]<-0x00
+@test.cmp.exec.datamemory1      3560[0x0000008b]->0xxx
+@test.cmp.exec.datamemory0      3560[0x0000008b]<-0x59
+@test.cmp.exec.datamemory0      3560[0x0000008b]->0xxx
+
+@test.cmp.rf      3640
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000022 [09]00000037 [10]00000059 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      3640[0x0000008a]->0x37
+@test.cmp.exec.datamemory1      3640[0x0000008a]->0x00
+@test.cmp.exec.datamemory2      3640[0x0000008a]->0x00
+@test.cmp.exec.datamemory3      3640[0x0000008a]->0x00
+
+@test.cmp.rf      3720
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000037 [09]00000037 [10]00000059 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      3720[0x0000008b]->0x00
+@test.cmp.exec.datamemory2      3720[0x0000008b]->0x00
+@test.cmp.exec.datamemory1      3720[0x0000008b]->0x00
+@test.cmp.exec.datamemory0      3720[0x0000008b]->0x59
+
+@test.cmp.rf      3800
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000037 [09]00000059 [10]00000059 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      3800[0x0000140d]->0xxx
+@test.cmp.exec.datamemory1      3800[0x0000140d]->0xxx
+@test.cmp.exec.datamemory2      3800[0x0000140d]->0xxx
+@test.cmp.exec.datamemory3      3800[0x0000140d]->0xxx
+
+@test.cmp.rf      3880
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000037 [09]00000059 [10]00000090 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      3880[0x0000008c]<-0x00
+@test.cmp.exec.datamemory3      3880[0x0000008c]->0xxx
+@test.cmp.exec.datamemory2      3880[0x0000008c]<-0x00
+@test.cmp.exec.datamemory2      3880[0x0000008c]->0xxx
+@test.cmp.exec.datamemory1      3880[0x0000008c]<-0x00
+@test.cmp.exec.datamemory1      3880[0x0000008c]->0xxx
+@test.cmp.exec.datamemory0      3880[0x0000008c]<-0x90
+@test.cmp.exec.datamemory0      3880[0x0000008c]->0xxx
+
+@test.cmp.rf      3960
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000037 [09]00000059 [10]00000090 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      3960[0x0000008b]->0x59
+@test.cmp.exec.datamemory1      3960[0x0000008b]->0x00
+@test.cmp.exec.datamemory2      3960[0x0000008b]->0x00
+@test.cmp.exec.datamemory3      3960[0x0000008b]->0x00
+
+@test.cmp.rf      4040
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000059 [09]00000059 [10]00000090 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      4040[0x0000008c]->0x00
+@test.cmp.exec.datamemory2      4040[0x0000008c]->0x00
+@test.cmp.exec.datamemory1      4040[0x0000008c]->0x00
+@test.cmp.exec.datamemory0      4040[0x0000008c]->0x90
+
+@test.cmp.rf      4120
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000059 [09]00000090 [10]00000090 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      4120[0x00001416]->0xxx
+@test.cmp.exec.datamemory1      4120[0x00001416]->0xxx
+@test.cmp.exec.datamemory2      4120[0x00001416]->0xxx
+@test.cmp.exec.datamemory3      4120[0x00001416]->0xxx
+
+@test.cmp.rf      4200
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000059 [09]00000090 [10]000000e9 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      4200[0x0000008d]<-0x00
+@test.cmp.exec.datamemory3      4200[0x0000008d]->0xxx
+@test.cmp.exec.datamemory2      4200[0x0000008d]<-0x00
+@test.cmp.exec.datamemory2      4200[0x0000008d]->0xxx
+@test.cmp.exec.datamemory1      4200[0x0000008d]<-0x00
+@test.cmp.exec.datamemory1      4200[0x0000008d]->0xxx
+@test.cmp.exec.datamemory0      4200[0x0000008d]<-0xe9
+@test.cmp.exec.datamemory0      4200[0x0000008d]->0xxx
+
+@test.cmp.rf      4280
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000059 [09]00000090 [10]000000e9 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      4280[0x0000008c]->0x90
+@test.cmp.exec.datamemory1      4280[0x0000008c]->0x00
+@test.cmp.exec.datamemory2      4280[0x0000008c]->0x00
+@test.cmp.exec.datamemory3      4280[0x0000008c]->0x00
+
+@test.cmp.rf      4360
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000090 [09]00000090 [10]000000e9 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      4360[0x0000008d]->0x00
+@test.cmp.exec.datamemory2      4360[0x0000008d]->0x00
+@test.cmp.exec.datamemory1      4360[0x0000008d]->0x00
+@test.cmp.exec.datamemory0      4360[0x0000008d]->0xe9
+
+@test.cmp.rf      4440
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000090 [09]000000e9 [10]000000e9 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      4440[0x00001424]->0xxx
+@test.cmp.exec.datamemory1      4440[0x00001424]->0xxx
+@test.cmp.exec.datamemory2      4440[0x00001424]->0xxx
+@test.cmp.exec.datamemory3      4440[0x00001424]->0xxx
+
+@test.cmp.rf      4520
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000090 [09]000000e9 [10]00000179 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      4520[0x0000008e]<-0x00
+@test.cmp.exec.datamemory3      4520[0x0000008e]->0xxx
+@test.cmp.exec.datamemory2      4520[0x0000008e]<-0x00
+@test.cmp.exec.datamemory2      4520[0x0000008e]->0xxx
+@test.cmp.exec.datamemory1      4520[0x0000008e]<-0x01
+@test.cmp.exec.datamemory1      4520[0x0000008e]->0xxx
+@test.cmp.exec.datamemory0      4520[0x0000008e]<-0x79
+@test.cmp.exec.datamemory0      4520[0x0000008e]->0xxx
+
+@test.cmp.rf      4600
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000090 [09]000000e9 [10]00000179 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      4600[0x0000008d]->0xe9
+@test.cmp.exec.datamemory1      4600[0x0000008d]->0x00
+@test.cmp.exec.datamemory2      4600[0x0000008d]->0x00
+@test.cmp.exec.datamemory3      4600[0x0000008d]->0x00
+
+@test.cmp.rf      4680
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]000000e9 [09]000000e9 [10]00000179 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      4680[0x0000008e]->0x00
+@test.cmp.exec.datamemory2      4680[0x0000008e]->0x00
+@test.cmp.exec.datamemory1      4680[0x0000008e]->0x01
+@test.cmp.exec.datamemory0      4680[0x0000008e]->0x79
+
+@test.cmp.rf      4760
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]000000e9 [09]00000179 [10]00000179 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      4760[0x0000143a]->0xxx
+@test.cmp.exec.datamemory1      4760[0x0000143a]->0xxx
+@test.cmp.exec.datamemory2      4760[0x0000143a]->0xxx
+@test.cmp.exec.datamemory3      4760[0x0000143a]->0xxx
+
+@test.cmp.rf      4840
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]000000e9 [09]00000179 [10]00000262 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      4840[0x0000008f]<-0x00
+@test.cmp.exec.datamemory3      4840[0x0000008f]->0xxx
+@test.cmp.exec.datamemory2      4840[0x0000008f]<-0x00
+@test.cmp.exec.datamemory2      4840[0x0000008f]->0xxx
+@test.cmp.exec.datamemory1      4840[0x0000008f]<-0x02
+@test.cmp.exec.datamemory1      4840[0x0000008f]->0xxx
+@test.cmp.exec.datamemory0      4840[0x0000008f]<-0x62
+@test.cmp.exec.datamemory0      4840[0x0000008f]->0xxx
+
+@test.cmp.rf      4920
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]000000e9 [09]00000179 [10]00000262 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      4920[0x0000008e]->0x79
+@test.cmp.exec.datamemory1      4920[0x0000008e]->0x01
+@test.cmp.exec.datamemory2      4920[0x0000008e]->0x00
+@test.cmp.exec.datamemory3      4920[0x0000008e]->0x00
+
+@test.cmp.rf      5000
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000179 [09]00000179 [10]00000262 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      5000[0x0000008f]->0x00
+@test.cmp.exec.datamemory2      5000[0x0000008f]->0x00
+@test.cmp.exec.datamemory1      5000[0x0000008f]->0x02
+@test.cmp.exec.datamemory0      5000[0x0000008f]->0x62
+
+@test.cmp.rf      5080
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000179 [09]00000262 [10]00000262 [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory0      5080[0x0000145e]->0xxx
+@test.cmp.exec.datamemory1      5080[0x0000145e]->0xxx
+@test.cmp.exec.datamemory2      5080[0x0000145e]->0xxx
+@test.cmp.exec.datamemory3      5080[0x0000145e]->0xxx
+
+@test.cmp.rf      5160
+[00]00000000 [01]xxxxxxxx [02]xxxxxxxx [03]xxxxxxxx
+[04]xxxxxxxx [05]xxxxxxxx [06]xxxxxxxx [07]xxxxxxxx
+[08]00000179 [09]00000262 [10]000003db [11]00000200
+[12]xxxxxxxx [13]xxxxxxxx [14]xxxxxxxx [15]xxxxxxxx
+[16]xxxxxxxx [17]xxxxxxxx [18]xxxxxxxx [19]xxxxxxxx
+[20]xxxxxxxx [21]xxxxxxxx [22]xxxxxxxx [23]xxxxxxxx
+[24]xxxxxxxx [25]xxxxxxxx [26]xxxxxxxx [27]xxxxxxxx
+[28]xxxxxxxx [29]xxxxxxxx [30]xxxxxxxx [31]xxxxxxxx
+@test.cmp.exec.datamemory3      5160[0x00000090]<-0x00
+@test.cmp.exec.datamemory3      5160[0x00000090]->0xxx
+@test.cmp.exec.datamemory2      5160[0x00000090]<-0x00
+@test.cmp.exec.datamemory2      5160[0x00000090]->0xxx
+@test.cmp.exec.datamemory1      5160[0x00000090]<-0x03
+@test.cmp.exec.datamemory1      5160[0x00000090]->0xxx
+@test.cmp.exec.datamemory0      5160[0x00000090]<-0xdb
+@test.cmp.exec.datamemory0      5160[0x00000090]->0xxx

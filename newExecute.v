@@ -174,13 +174,13 @@ module execute(
         input [25:0] addr;
 
         case(op)
-            6'd32:        npc = (reg1 == reg2) ? pc + 32'd1 + dpl_imm : pc + 32'd1; // beq
-            6'd33:        npc = (reg1 != reg2) ? pc + 32'd1 + dpl_imm : pc + 32'd1; // bne
-            6'd34:        npc = (reg1 <  reg2) ? pc + 32'd1 + dpl_imm : pc + 32'd1; // blt
-            6'd35:        npc = (reg1 <= reg2) ? pc + 32'd1 + dpl_imm : pc + 32'd1; // ble
-            6'd40, 6'd41: npc = {6'b0, addr};                                       // j, jal
-            6'd42:        npc = reg1;                                               // jr
-            6'd63:        $finish;                                       // halt
+            6'd32:        npc = (reg1 == reg2) ? pc + 32'd1 + (dpl_imm >>> 2) : pc + 32'd1; // beq
+            6'd33:        npc = (reg1 != reg2) ? pc + 32'd1 + (dpl_imm >>> 2) : pc + 32'd1; // bne
+            6'd34:        npc = (reg1 <  reg2) ? pc + 32'd1 + (dpl_imm >>> 2) : pc + 32'd1; // blt
+            6'd35:        npc = (reg1 <= reg2) ? pc + 32'd1 + (dpl_imm >>> 2) : pc + 32'd1; // ble
+            6'd40, 6'd41: npc = {6'b0, (addr >>> 2)};                                       // j, jal
+            6'd42:        npc = reg1;                                                       // jr
+            6'd63:        $finish;                                                          // halt
             default:      npc = pc + 32'd1;
         endcase
     endfunction // }}}
